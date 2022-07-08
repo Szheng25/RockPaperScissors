@@ -12,10 +12,10 @@ computer = options[randint(0, 2)]
 print("\nRock, paper, scissors, says shoot!\n")
 
 if (player == computer) : 
-    print("It's a tie!")
+    print("It's a tie!\n")
 elif (player == "rock") :
     if (computer == "paper") :
-        print("You lost, " + computer + " covers " + player + ".\n")
+        print("You lose, " + computer + " covers " + player + ".\n")
     else:
         print("You win, " + player + " crushes " + computer + ".\n")
 elif (player == "paper") :
