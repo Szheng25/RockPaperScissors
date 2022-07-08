@@ -17,8 +17,22 @@ elif (playerChoice == "rock") :
     elif (computerChoice == "scissors") :
         print("You win! Rock crushes scissors. You chose " + playerChoice \
             + " and the computer chose " + computerChoice + ".")
-            
-# rock crushes scissors
-# scissors cuts paper
-# paper covers rock
+elif (playerChoice == "paper") :
+    if (computerChoice == "scissors") :
+        print("You lose! Scissors cuts paper. You chose " + playerChoice \
+            + " but the computer chose " + computerChoice + ".")
+    elif (computerChoice == "rock") :
+        print("You win! Paper covers rock. You chose " + playerChoice \
+            + " and the computer chose " + computerChoice + ".")
+elif (playerChoice == "scissors") :
+    if (computerChoice == "rock") :
+        print("You lose! Rock crushes scissors. You chose " + playerChoice \
+            + " but the computer chose " + computerChoice + ".")
+    elif (computerChoice == "paper") :
+        print("You win! Scissors cuts paper. You chose " + playerChoice \
+            + " and the computer chose " + computerChoice + ".")
+
+# Rock crushes scissors
+# Scissors cuts paper
+# Paper covers rock
 print("\n")
