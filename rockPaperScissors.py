@@ -2,28 +2,29 @@ from random import randint
 
 options = ["rock", "paper", "scissors"]
 
-playerChoice = input("\nPick \"rock\", \"paper\", or \"scissors\": ")
-while (playerChoice not in options) :
-    playerChoice = input("\nNot a valid choice! Please pick from \"rock\", \"paper\", or \"scissors\": ")
+player = input("\nPick \"rock\", \"paper\", or \"scissors\": ")
 
-computerChoice = options[randint(0, 2)]
+while (player not in options) :
+    player = input("\nNot a valid choice! Please pick from \"rock\", \"paper\", or \"scissors\": ")
+
+computer = options[randint(0, 2)]
 
 print("\nRock, paper, scissors, says shoot!\n")
 
-if (playerChoice == computerChoice) : 
+if (player == computer) : 
     print("It's a tie!")
-elif (playerChoice == "rock") :
-    if (computerChoice == "paper") :
-        print("You lose! Paper covers rock.\n")
+elif (player == "rock") :
+    if (computer == "paper") :
+        print("You lost, " + computer + " covers " + player + ".\n")
     else:
-        print("You win! Rock crushes scissors.\n")
-elif (playerChoice == "paper") :
-    if (computerChoice == "scissors") :
-        print("You lose! Scissors cuts paper.\n")
+        print("You win, " + player + " crushes " + computer + ".\n")
+elif (player == "paper") :
+    if (computer == "scissors") :
+        print("You lose, " + computer + " cuts " + player + ".\n")
     else:
-        print("You win! Paper covers rock.\n")
+        print("You win, " + player + " covers " + computer + ".\n")
 else:
-    if (computerChoice == "rock") :
-        print("You lose! Rock crushes scissors.\n")
+    if (computer == "rock") :
+        print("You lose, " + computer + " crushes " + player + ".\n")
     else:
-        print("You win! Scissors cuts paper.\n")
+        print("You win, " + player + " cuts " + computer + ".\n")
