@@ -13,15 +13,15 @@ if (playerChoice == computerChoice) :
 elif (playerChoice == "rock") :
     if (computerChoice == "paper") :
         print("You lose! Paper 📃 covers rock 🪨.")
-    elif (computerChoice == "scissors") :
+    else:
         print("You win! Rock 🪨 crushes scissors ✂️.")
 elif (playerChoice == "paper") :
     if (computerChoice == "scissors") :
         print("You lose! Scissors ✂️ cuts paper 📃.")
-    elif (computerChoice == "rock") :
+    else:
         print("You win! Paper 📃 covers rock 🪨.")
-elif (playerChoice == "scissors") :
+else:
     if (computerChoice == "rock") :
         print("You lose! Rock 🪨 crushes scissors ✂️.")
-    elif (computerChoice == "paper") :
+    else:
         print("You win! Scissors ✂️ cuts paper 📃.")
